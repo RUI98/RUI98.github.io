@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: "righteous_regular.ttf";
+      src: url("https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Frighteous_regular.ttf?v=1604479684330");
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Noice Knoives</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body id="heaven">
+    <header id="toggleHeader">
+      <a onclick="goToPage('/index.html')">
+        <img
+          class="logo"
+          src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Flogo2.png?v=1604336259430"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a onclick="goToPage('/about.html')">About</a></li>
+          <li onclick="toggleBreak" id="breakId">
+            <a href="/break.html?theme=hell">Break Stuff</a>
+          </li>
+          <li>
+            <a id="loveLetter" onclick="goToPage('/send.html')">Hate Letter</a>
+          </li>
+          <li><a href="/help.html?theme=hell">Get Help</a></li>
+        </ul>
+      </nav>
+      <img
+        class="icon"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2F842-512.png?v=1604572508684"
+      />
+    </header>
+    <div>
+      <h1 class="send" id="toggleSend">
+        New Hate Letter
+      </h1>
+    </div>
+    <figure>
+      <img
+        class="infoImage"
+        id="info"
+        onclick="info()"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Finfo.png?v=1604742463637"
+      />
+    </figure>
+
+    <div class="form">
+      <form id="toggleForm">
+        <fieldset>
+          <label for="textTo">To</label>
+          <input id="input01" type="textTo" style="font-size: 13pt" />
+        </fieldset>
+        <fieldset>
+          <label for="textSubject">Subject</label>
+          <input id="input02" type="textSubject" style="font-size: 13pt" />
+        </fieldset>
+        <textarea
+          class="texxt"
+          id="input04"
+          type="textWrite"
+          rows="13"
+          cols="20"
+          style="font-size: 15pt"
+        ></textarea>
+        <a onclick="goToPage('/send.html')">
+          <div>
+            <p onclick="send();" id="sendd" class="sendButton">
+              Send
+            </p>
+          </div>
+        </a>
+        <a onclick="goToPage('/send.html')">
+          <img
+            class="deletebin"
+            type="image"
+            value="reset"
+            src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Fdeletebin.png?v=1604583524086"
+          />
+        </a>
+      </form>
+    </div>
+    <a onclick="goToPage('/index.html')">
+      <img
+        class="cancel"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Fcancel.png?v=1604584535303"
+    /></a>
+
+    <button
+      class="calm"
+      id="toggleButton"
+      onclick="toggleHeaven();toggleHeavenHeader();toggleHeavenButton();removeHeart();"
+    >
+      I'm calm...
+    </button>
+    <div class="play">
+      <iframe
+        class="play-long"
+        id="myframe"
+        src="https://open.spotify.com/embed/playlist/3pAzh3Y2eKQxHyVEt53cOy"
+        width="300px"
+        height="380px"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      >
+      </iframe>
+    </div>
+    <section class="copyright">
+      <p>© Noine Noice Knoives 2020</p>
+    </section>
+  </body>
+</html>
