@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: "righteous_regular.ttf";
+      src: url("https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Frighteous_regular.ttf?v=1604479684330");
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Noice Knoives</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body id="heaven">
+    <header id="toggleHeader">
+      <a onclick="goToPage('/index.html')">
+        <img
+          class="logo"
+          src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Flogo2.png?v=1604336259430"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a onclick="goToPage('/about.html')">About</a></li>
+          <li onclick="toggleBreak" id="breakId">
+            <a href="/break.html?theme=hell">Break Stuff</a>
+          </li>
+          <li>
+            <a id="loveLetter" onclick="goToPage('/send.html')">Hate Letter</a>
+          </li>
+          <li><a href="/help.html">Get Help</a></li>
+        </ul>
+      </nav>
+      <img
+        class="icon"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2F842-512.png?v=1604572508684"
+      />
+    </header>
+    <div class="dropdown">
+      <button class="dropbtn">What do you want to break?</button>
+      <div class="dropdown-content">
+        <a onclick="toggle_video('video1');" href="#">Computers</a>
+        <a onclick="toggle_video('video2');" href="#">Mirrors</a>
+        <a onclick="toggle_video('video3');" href="#">Coding</a>
+        <a onclick="toggle_video('video4');" href="#">My Working Space</a>
+        <a onclick="toggle_video('video5');" href="#">Workouts</a>
+        <a onclick="toggle_video('video6');" href="#">Packages</a>
+        <a onclick="toggle_video('video7');" href="#">C0d1ng</a>
+        <a onclick="toggle_video('video8');" href="#">Corona Virus</a>
+        <a onclick="toggle_video('video9');" href="#">Cleaning</a>
+      </div>
+    </div>
+
+    <div class="place-holder">
+      <img
+        class="breakImg"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Fbreak_Rityta%201.png?v=1604576478440"
+      />
+
+      <div id="video1" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/R_FoFbAyVQk"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div id="video2" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/ySCXVdM5hCU?start=023"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div id="video3" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/HJkU21w7iEg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video4" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/FydMvyM857M?start=169"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video5" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/xyEtbeMwhE8"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video6" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/9umbIMt7Qco"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video7" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/HJkU21w7iEg"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video8" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/HmygPhu_CYA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div id="video9" class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/LxFVuNndfyU"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!--     <div id="myModal" class="modal" -->
+
+    <div class="play">
+      <iframe
+        class="play-long"
+        id="myframe"
+        src="https://open.spotify.com/embed/playlist/3pAzh3Y2eKQxHyVEt53cOy"
+        width="300px"
+        height="380px"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      >
+      </iframe>
+    </div>
+    <section class="copyright">
+      <p>© Noine Noice Knoives 2020</p>
+    </section>
+  </body>
+</html>

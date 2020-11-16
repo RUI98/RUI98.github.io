@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    @font-face {
+      font-family: "righteous_regular.ttf";
+      src: url("https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Frighteous_regular.ttf?v=1604479684330");
+    }
+  </style>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Noice Knoives</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body id="heaven">
+    <header id="toggleHeader">
+      <a onclick="goToPage('/index.html')">
+        <img
+          class="logo"
+          src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2Flogo2.png?v=1604336259430"
+      /></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a onclick="goToPage('/about.html')">About</a></li>
+          <li onclick="toggleBreak" id="breakId">
+            <a href="/break.html?theme=hell">Break Stuff</a>
+          </li>
+          <li>
+            <a id="loveLetter" onclick="goToPage('/send.html')">Hate Letter</a>
+          </li>
+          <li><a href="/help.html">Get Help</a></li>
+        </ul>
+      </nav>
+      <img
+        class="icon"
+        src="https://cdn.glitch.com/6c21c18a-3577-446f-b6e2-caf6b0c0f8dc%2F842-512.png?v=1604572508684"
+      />
+    </header>
+    <div class="about" id="popup">
+      <p id="popupTextElement" style="white-space: break-spaces;">
+        <!--         A rude hello to you,<br /><br/>
+        And an inhospital unwelcome to this unpleasingly angry page! 🔪 This is for
+        the furious souls looking to break shit. 🔪 And for the grumpy minds to
+        send their fricking temper away for some other poor person to deal with.
+        <br /><br />And when you feel f***ing calm again, just press the button
+        to the right and we will send you with a first class ticket to Zen with
+        a stopover in Mindful. <br /><br />Enjoy your crappy stay!
+        <br /><br />Worst wishes, 🔪 The Noine Noice Knoives 🔪 -->
+      </p>
+    </div>
+    <button class="calm" id="toggleButton" onclick="toggleHeaven()">
+      I'm calm...
+    </button>
+    <div class="play">
+      <iframe
+        class="play-long"
+        id="myframe"
+        src="https://open.spotify.com/embed/playlist/3pAzh3Y2eKQxHyVEt53cOy"
+        width="300px"
+        height="380px"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      >
+      </iframe>
+    </div>
+    <section class="copyright">
+      <p>© Noine Noice Knoives 2020</p>
+    </section>
+  </body>
+</html>
